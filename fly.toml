@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for cobuccio on 2025-06-16T03:02:31-03:00
+# fly.toml app configuration file generated for cobuccio on 2025-06-16T03:48:40-03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -29,4 +29,6 @@ console_command = 'php /var/www/html/artisan tinker'
   processes = ['app']
 
 [[vm]]
-  size = 'shared-cpu-1x'
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1

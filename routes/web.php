@@ -56,7 +56,7 @@ Route::get('/noticias', function () {
             'q' => 'investimento',
             'language' => 'pt',
             'pageSize' => 10,
-            'apiKey' => '896f24c6a2e34b679a06bdab61983b20 a',
+            'apiKey' => '896f24c6a2e34b679a06bdab61983b20',
         ])
         ->json();
 });
